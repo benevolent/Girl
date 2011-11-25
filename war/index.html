@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>女の子</title>
+<link type="text/css" rel="stylesheet" href="css/index.css">
+<script type="text/javascript" src="js/smooth.pack.js"></script>
+<style type="text/css">
+body{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
+</head>
+<body>
+	<h1>女の子</h1>
+	<p>女の子を生成します。</p>
+	<form action="girl" method="post">
+		<p>基本的なステータスを選んでください</p>
+
+		<p><label>名前：<input type="text" name="name" autofocus="autofocus"></label></p>
+		<p><label>身長：<input type="range" name="height" maxlength="300" min="0"></label></p><!-- 数値を表示(cm) -->
+		<fieldset>
+			<legend>アゴ</legend>
+			<p><label><input type="radio" name="jaw" value="Small">Small</label></p>
+			<p><label><input type="radio" name="jaw" value="Medium">Medium</label></p>
+			<p><label><input type="radio" name="jaw" value="Large">Large</label></p>
+			<p><label><input type="radio" name="jaw" value="XO">XO</label></p>
+		</fieldset>
+		<fieldset>
+			<legend>年齢層</legend>
+			<p><label><input type="radio" name="age" value="ちっちゃい娘">ちっちゃい娘</label></p>
+			<p><label><input type="radio" name="age" value="小学生くらい">小学生くらい</label></p>
+			<p><label><input type="radio" name="age" value="中学生くらい">中学生くらい</label></p>
+			<p><label><input type="radio" name="age" value="高校生くらい">高校生くらい</label></p>
+			<p><label><input type="radio" name="age" value="大学生くらい">大学生くらい</label></p>
+			<p><label><input type="radio" name="age" value="社会人みたい">社会人みたい</label></p>
+			<p><label><input type="radio" name="age" value="オバハン">オバハン</label></p>
+		</fieldset>
+		<fieldset>
+			<legend>属性</legend>
+			<p><label><input type="checkbox" name="attributes" value="メガネ"></label>メガネ</p>
+			<p><label><input type="checkbox" name="attributes" value="天然"></label>天然</p>
+			<p><label><input type="checkbox" name="attributes" value="紫髪"></label>紫髪</p>
+			<p><label><input type="checkbox" name="attributes" value="黒髪ストレート"></label>黒髪ストレート</p>
+		</fieldset>
+		<input type="submit" value="確認をします"><input type="reset">
+	</form>
+</body>
+</html>
